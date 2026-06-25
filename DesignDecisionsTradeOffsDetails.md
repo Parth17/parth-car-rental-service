@@ -33,6 +33,5 @@ infrastructure boilerplate the brief explicitly said to avoid.
 | Pricing | Not modelled | Rate card per `CarType` + duration multiplier |
 | Customer identity | String `customerId`, no validation | Validated customer entity with auth |
 | Fleet size | Hardcoded in `FleetInitializer` | Configurable via `application.yml` or DB seed |
-| REST API | None | `ReservationController` with `POST /reservations` returning `201 Created` |
-| Error responses | Exception only | `@ControllerAdvice` mapping exceptions to RFC 7807 problem detail JSON |
+| REST API | can implement if required| `
 
