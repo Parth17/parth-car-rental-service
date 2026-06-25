@@ -36,7 +36,7 @@ need to filter cancelled ones out. Straightforward but skipped for time.
 **Thread safety** — there's a race between finding an available car and saving the
 reservation. In practice you'd handle this with a DB unique constraint + retry, or
 a short-lived lock per car type. With an in-memory list it's not really solvable cleanly
-without synchronization I didn't want to add for a toy system.
+without synchronization I didn't want to add for a car system.
 
 **REST layer** — I left it out. Adding a controller is pure boilerplate and the interesting
 logic is all in the service.
